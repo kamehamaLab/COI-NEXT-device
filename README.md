@@ -12,7 +12,7 @@ Googleドライブに音声データをアップロードするデバイスシ�
 ```bash:Terminal
 sudo apt update 
 sudo apt upgrade
-sudo pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib oauth2client
+sudo pip install --break-system-packages --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib oauth2client
 sudo pip3 install pyaudio
 sudo apt install libportaudio0 libportaudio2 libportaudiocpp0 portaudio19-dev
 ```
