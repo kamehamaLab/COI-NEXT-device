@@ -7,14 +7,18 @@ Googleドライブに音声データをアップロードするデバイスシ�
 - python3.9以上
 
 ## 初期設定
-1. `startUp.py`を実行
-1. 必要ライブラリをインストール
+1. clone this repository & `cd COI-NEXT-device`
+2. `startUp.py`を実行
+3. 必要ライブラリをインストール
 ```bash:Terminal
 sudo apt update 
 sudo apt upgrade
 sudo pip install --break-system-packages --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib oauth2client
 sudo apt install python3-pyaudio
 ```
+4. Google Cloud Platformにログインし認証用のJSONファイルをダウンロードしてくる。名前を`client_secret.json`に変更する。
+6. ファイルをラズパイ上に移動させる。（scpコマンドとかある）
+7. 
 
 ## 使用方法
 2. Google Cloud Platformにログインし認証用のJSONファイルをダウンロードしてくる。
